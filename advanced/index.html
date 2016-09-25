@@ -2,11 +2,16 @@
 <html>
 <head>
     <title>Advanced Phaser</title>
+    <script type='text/javascript' src='phaser.min.js'></script>
+    <script type='text/javascript' src='boot.js'></script>
+    <script type='text/javascript' src='preloader.js'></script>
+    <script type='text/javascript' src='mainmenu.js'></script>
+    <script type='text/javascript' src='level1.js'></script>
 </head>
 <body>
 <script>
     window.onload = function(){
-        var game = new Phaser.Game(800,600,Phaser.CANVAS,'');
+        var game = new Phaser.Game(1280,600,Phaser.CANVAS,'');
 
         game.state.add('Boot', Game.Boot);
         game.state.add('Preloader', Game.Preloader);
@@ -15,6 +20,6 @@
         game.state.start('Boot');
     }
 
-</script>>
+</script>
 </body>
 </html>
