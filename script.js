@@ -28,6 +28,7 @@ var mainState = {
 		createEnemies();
 	},
 	update:function(){
+		game.physics.arcade.overlap(bullets,enemies,collisionHandler,null,this);
 		player.body.velocity.x = 0;
 		spacefield.tilePosition.y += 1;
 		if(cursors.left.isDown) player.body.velocity.x = -350;
@@ -36,6 +37,10 @@ var mainState = {
 	}
 }
 // Utility function
+function collisionHandler(bullet,enemy){
+	bullet.kill();
+	enemy.kill();
+}
 function createEnemies(){
 	for(var y = 0;y < 4;y++){
 		for(var x = 0; x < 10;x++){
