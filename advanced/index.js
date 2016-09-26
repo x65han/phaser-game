@@ -1,11 +1,13 @@
 var express = require('express');
 var path    = require("path");
 var app = express();
-var bodyParser = require('body-parser');
+app.use(express.static(__dirname + ''));
+app.set('views', __dirname + '');
+app.set('view engine', 'html');
 
 //RESTful API
 app.get('/', function(request, response) {
-  response.render('index.html');
+  response.render('index');
 });
 
 //Port Setting

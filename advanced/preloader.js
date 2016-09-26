@@ -12,6 +12,8 @@ Game.Preloader.prototype = {
 		// LOAD all Assets
 		this.load.tilemap('map','level1.csv');
 		this.load.image('tileset','tile.png');
+		this.load.spritesheet('player','player.png',24,26);
+
 	},
 	create: function(){
 		this.state.start('Level1');
