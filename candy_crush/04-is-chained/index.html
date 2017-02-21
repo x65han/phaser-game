@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>Learn Game Development at ZENVA.com</title>
+
+		<style>
+		  body {
+		  	background-color: black;
+		    padding: 0px;
+		    margin: 0px;
+		  }
+	  </style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/phaser.js"></script>
+		<script type="text/javascript" src="js/states/Boot.js"></script>
+		<script type="text/javascript" src="js/states/Preload.js"></script>
+		<script type="text/javascript" src="js/states/Game.js"></script>
+		<script type="text/javascript" src="js/prefabs/Board.js"></script>
+		<script type="text/javascript" src="js/prefabs/Block.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
